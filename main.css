@@ -1,0 +1,202 @@
+#about-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.time-line {
+    display: flex;
+    /* left: 5%;
+    width:3px; */
+    margin: 0px auto;
+    border-left: solid 3px black;
+    z-index: 100;
+    height: 100px;
+    /* position: absolute; */
+}
+
+.time-line-2 {
+    height: 153px;
+    margin-top: -53px;
+}
+
+.time-line-bubble {
+    border: solid 3px blueviolet;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+
+}
+
+.time-line-text {
+    width: 350px;
+}
+
+.time-line-row {
+    display: flex;
+    /* position: absolute; */
+    top: 106px;
+    justify-content: space-between;
+    width: 95vw;
+    left: 1%;
+    margin: 100px auto;
+}
+
+.row-2 {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-page-banner {
+    display: flex;
+    margin: 0 auto;
+    width: 390px;
+    height: 200px;
+    background: url('assets/camaro-stock-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row-text-header {
+    display: flex; 
+    justify-content: space-around;
+    border: solid 3px black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+.row-container {
+    position: relative;
+    z-index: 100;
+    background: white;
+    margin-bottom: 100px;
+    padding-bottom: 25px;
+}
+
+.row-reverse-container {
+    position: relative;
+    z-index: 100;
+    background: white;
+    margin-bottom: 100px;
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+    
+}
+
+@media screen and (min-width: 1224px){
+
+    
+#about-us-container {
+    display:flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+.row-container {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+}
+
+.row-reverse-container {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-bottom: 12px;
+
+}
+
+.text-container {
+    display:flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.image-container {
+    width: 600px;
+    height:300px;
+}
+
+.image-1 {
+    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/zoomworking2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-building.jpg?53377');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-3 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-customer-3800.jpg?53377');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-4 {
+    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/ecotecAbout1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-5 {
+    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/snobalt_f8477c06-fd46-4fba-a0e7-d9259c5bd885_large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-6 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ecotec.jpg?53377');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-7 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ats.jpg?53377');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-8 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ZZP_sonic_cruze_flip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-9 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/LSx_Banner_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-10 {
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/Slingshot6_2.jpg?53377');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+
+}
