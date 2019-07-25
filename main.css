@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     width: 100%;
     position: relative;
+    align-items: center;
 }
 
 .time-line {
@@ -18,18 +19,28 @@ body {
     border-left: solid 3px black;
     position: relative;
     z-index: 1;
-    /* height: 200px; */
-    height:500px;
+    height:600px;
+}
+
+.time-line-image-text-container {
+    display: flex;
 }
 
 .time-line-text-container {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+}
+
+.time-line-image-container {
+    display: none;
+    max-height: inherit;
+    flex-basis: 45%;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
 }
 
 .time-line-2 {
-    /* height: 255px; */
-    height: 455px;
+    height: 555px;
     position: relative;
     z-index: 1;
     margin-top: -53px;
@@ -43,31 +54,32 @@ body {
     position: relative;
     z-index: 10;
     background: white;
-    margin-top: calc(-345px + 53px);
+    margin-top: calc(-445px + 53px);
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
-
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
 }
 
 .first-bubble {
-    /* margin-top: -100px; */
-    margin-top: -390px;
-
+    margin-top: -490px;
 }
 
 .time-line-text {
     width: auto;
     padding: 10px;
     color: black;
+    border-radius: 0px 10px 10px 10px;
+    padding: 15px;
+    min-height: 240px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
 }
 
 .time-line-row {
     display: flex;
-    /* position: absolute; */
     top: 106px;
     justify-content: space-between;
     width: 95vw;
@@ -110,9 +122,10 @@ body {
     display: flex;
     margin: 0 auto;
     width: auto;
-    height: 200px;
-    background: url('assets/camaro-stock-banner.jpg');
+    height: 150px;
+    background: url('assets/ashley-sonic.jpg');
     background-repeat: no-repeat;
+    background-position: 0% 60%;
     background-size: cover;
 }
 
@@ -123,8 +136,6 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
-
-
 
 .row-container {
     position: relative;
@@ -139,158 +150,115 @@ body {
     z-index: 100;
     background: white;
     margin-bottom: 100px;
-
 }
 
 #about-gallery-container {
     display: flex;
     flex-direction: column;
-    /* border: solid 1px black; */
     background: white;
     position: relative;
     z-index:1;
-    width: 100%;
+    width: 94vw;
     height:300px;
 }
-
-.about-gallery-row {
-
-} 
-
 
 .gallery-row-1 {
     display: flex;
     width: inherit;
     height: 33.33%;
     border-bottom: solid 3px white;
-
 }
 
 .row-1-image-1{
     flex-basis: 40%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-left:solid 3px white;
     border-right: solid 3px white;
     border-bottom: solid 3px white;
-
     background: #00DBE1;
     background: url('assets/gallery-1.jpg');
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
 
 .row-1-image-2{
     flex-basis: 60%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-right: solid 3px white;
     background: #00DBE1;
     background: url('assets/gallery-2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
-
 
 .gallery-row-2 {
     display: flex;
     width: inherit;
     height: 33.33%;
     border-bottom: solid 3px white;
-
 }
 
 .row-2-image-1{
     flex-basis: 60%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-left:solid 3px white;
     border-right: solid 3px white;
     background: url('assets/gallery-3.jpg');
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
 
 .row-2-image-2{
     flex-basis: 40%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-right: solid 3px white;
     background: #FFC300;
     background: url('assets/gallery-4.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
-
-/* .row-2-image-3{} */
-
 
 .gallery-row-3 {
     display: flex;
     width: inherit;
     height: 33.33%;
     border-bottom: solid 3px white;
-
 }
 
 .row-3-image-1{
     flex-basis: 40%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-left:solid 3px white;
     border-right: solid 3px white;
     border-bottom: solid 3px white;
-
     background: #00DBE1;
     background: url('assets/gallery-5.jpg');
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
 
 .row-3-image-2{
     flex-basis: 60%;
     width:inherit;
     height: 100%;
-    /* border: solid 3px white; */
     border-right: solid 3px white;
     background: #00DBE1;
     background: url('assets/gallery-6.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
 
 }
-
-/* .row-3-image-3{} */
-
-
-/* .gallery-row-4 {
-    display: flex;
-    width: inherit;
-    height: 25%;
-}
-
-.row-4-image-1{
-    flex-basis: 33.33%;
-    width:inherit;
-    height: 100%;
-    border: solid 1px blue;
-}
-
-.row-4-image-2{
-    flex-basis: 33.33%;
-    width:inherit;
-    height: 100%;
-    border: solid 1px blue;
-}
-
-.row-4-image-3{
-    flex-basis: 33.33%;
-    width:inherit;
-    height: 100%;
-    border: solid 1px blue;
-} */
 
 #about-page-closing-container {
     display:flex;
@@ -318,110 +286,182 @@ body {
     margin:0px 10px;
 }
 
-
-
-
-
+.wall-cover {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:100px;
+    position:relative;
+    z-index:1;
+    background:white;
+    margin-top:-75px;
+}
 
 
 @media screen and (min-width: 768px){
+    .text-background-1 {
+        background: white;
+        color: black;
+    }
 
+    .text-background-2 {
+        background: white;
+    }
+
+    .text-background-3 {
+        background: white;
+    }
+
+    .time-line-image-text-container {
+        justify-content: space-evenly;
+        padding: 25px;
+        border: unset;
+        box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+        margin-left: 10px;
+
+    }
+    
+    .time-line-bubble {
+        margin-top: calc(-545px + 110px);
+    }
+
+    .time-line-image-container {
+        display: flex;
+        flex-basis: 45%;
+    }
+    
+    .time-line-text-container {
+        flex-basis:45%;
+        margin-left: 0px;
+    }
+
+    .time-line-text {
+        box-shadow: unset;
+    }
+
+    .time-line {
+        height: 600px;
+    }
+    .first-bubble {
+        margin-top: -490px;
+    }
+
+    #about-gallery-container {
+        width: 92vw;
+        height: 600px;
+    }
+
+    .about-page-banner {
+        height: 350px;
+    }
+
+    .image-1 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/zoomworking2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0%;
+    }
+    
+    .image-2 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-building.jpg?53377');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+    }
+    
+    .image-3 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-customer-3800.jpg?53377');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 48%;
+    }
+    
+    .image-4 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ecotecAbout1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 40%;
+    }
+    
+    .image-5 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/snobalt_f8477c06-fd46-4fba-a0e7-d9259c5bd885_large.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 75%;
+    }
+    
+    .image-6 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ecotec.jpg?53377');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 53%;
+    }
+    
+    .image-7 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ats.jpg?53377');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 55%;
+    }
+    
+    .image-8 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ZZP_sonic_cruze_flip.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 68%;
+    }
+    
+    .image-9 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/LSx_Banner_1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+    
+    .image-10 {
+        background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/Slingshot6_2.jpg?53377');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 38%;
+    }
+
+    .wall-cover {
+        height: 145px;
+    }
+    
+    .time-line-image-text-container {
+        width: 100%;
+    }
+
+    .time-line-text {
+        max-width: 700px;
+    }
     
 }
 
 @media screen and (min-width: 1224px){
+    .time-line-2 {
+        height: 655px;
 
+    }
+
+    .time-line-bubble {
+        margin-top: calc(-545px + 53px);
+    }
     
-#about-us-container {
-    display:flex;
-    flex-direction: column;
-    align-content: space-evenly;
+    .wall-cover {
+        height: 188px;
+        margin-top: -85px;
+    }
+
+    #about-gallery-container {
+        width: 90.8vw;
+    height: 1200px;
+    }
 }
 
-.row-container {
-    display:flex;
-    justify-content: space-evenly;
-    margin-bottom: 12px;
-}
-
-.row-reverse-container {
-    display:flex;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    margin-bottom: 12px;
-
-}
-
-.text-container {
-    display:flex;
-    flex-direction: column;
-    width: 25vw;
-}
-
-.image-container {
-    width: 600px;
-    height:300px;
-}
-
-.image-1 {
-    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/zoomworking2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-2 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-building.jpg?53377');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-3 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-customer-3800.jpg?53377');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-4 {
-    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/ecotecAbout1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-5 {
-    background: url('//cdn.shopify.com/s/files/1/0022/0718/7055/files/snobalt_f8477c06-fd46-4fba-a0e7-d9259c5bd885_large.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-6 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ecotec.jpg?53377');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-7 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/about-us-ats.jpg?53377');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-8 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ZZP_sonic_cruze_flip.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-9 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/LSx_Banner_1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.image-10 {
-    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/Slingshot6_2.jpg?53377');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-    
-
+@media screen and (min-width:2500px) {
+    .time-line-image-text-container {
+        height: 390px;
+    }
 }
